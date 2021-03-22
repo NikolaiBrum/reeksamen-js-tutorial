@@ -53,18 +53,12 @@ let newGame = () => {
 let player1Turn = () => {
     if ($("player1High").checked) {
         if (arr[arr.length - 1] > arr[arr.length - 2]) {
-            console.log("correct");
             $("player1Points").innerHTML++;
-        } else {
-            console.log("false");
         }
     }
     if ($("player1Low").checked) {
         if (arr[arr.length - 1] < arr[arr.length - 2]) {
-            console.log("correct");
             $("player1Points").innerHTML++;
-        } else {
-            console.log("false");
         }
     }
     $("player1Low").checked = false;
@@ -74,18 +68,12 @@ let player1Turn = () => {
 let player2Turn = () => {
     if ($("player2High").checked) {
         if (arr[arr.length - 1] > arr[arr.length - 2]) {
-            console.log("correct");
             $("player2Points").innerHTML++;
-        } else {
-            console.log("false");
         }
     }
     if ($("player2Low").checked) {
         if (arr[arr.length - 1] < arr[arr.length - 2]) {
-            console.log("correct");
             $("player2Points").innerHTML++;
-        } else {
-            console.log("false");
         }
     }
     $("player2Low").checked = false;
